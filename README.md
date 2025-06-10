@@ -1,5 +1,5 @@
 ## Dotfiles
-Installation using stow:
+Installation using stow
 
 Ubuntu/Debian
 ```
@@ -16,8 +16,8 @@ cd ~/.dotfiles || stow .
 These dotfiles contain configurations for the following:
 ```
 zsh
-nvim
+nvim (oh-my-zsh)
 git
 neofetch
-tmux
+tmux (tpm)
 ```
