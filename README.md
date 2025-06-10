@@ -19,4 +19,5 @@ zsh
 nvim
 git
 neofetch
+tmux
 ```
