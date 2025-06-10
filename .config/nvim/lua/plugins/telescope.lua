@@ -10,6 +10,12 @@ return {
             vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "[F]ind [B]uffers" })
             vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "[F]ind [R]ecent" })
             vim.keymap.set("n", "<leader>fi", builtin.builtin, { desc = "[F]ind Bu[i]ltins" })
+            vim.keymap.set(
+                "n",
+                "<leader>fh",
+                ':lua require"telescope.builtin".find_files({ hidden = true })<CR>',
+                { desc = "[F]ind [H]idden" }
+            )
         end,
     },
     {
