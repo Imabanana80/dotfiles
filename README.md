@@ -15,8 +15,8 @@ cd ~/.dotfiles || stow .
 ### Software
 These dotfiles contain configurations for the following:
 ```
-zsh
-nvim (oh-my-zsh)
+zsh (oh-my-zsh)
+nvim 
 git
 neofetch
 tmux (tpm)
