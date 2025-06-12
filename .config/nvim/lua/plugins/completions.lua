@@ -40,7 +40,7 @@ return {
                     { name = "luasnip" },
                     { name = "buffer" },
                     { name = "path" },
-                    { name = "copilot" },
+                    --{ name = "copilot" }, disabled copilot bc holy fuck im going crazy with these garbage completions
                 }),
                 formatting = {
                     format = lspkind.cmp_format({
