@@ -21,6 +21,7 @@ return {
                     "jsonls",
                     "basedpyright",
                     "svelte",
+                    "jdtls",
                 },
             })
         end,
@@ -59,6 +60,7 @@ return {
             lspconfig.jsonls.setup(opts)
             lspconfig.basedpyright.setup(opts)
             lspconfig.svelte.setup(opts)
+            lspconfig.jdtls.setup(opts)
 
             require("conform").setup({
                 formatters_by_ft = {
@@ -98,5 +100,8 @@ return {
                 end,
             })
         end,
+    },
+    {
+        "mfussenegger/nvim-jdtls",
     },
 }
