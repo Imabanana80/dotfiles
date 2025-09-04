@@ -108,11 +108,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-neofetch
-
-# bun completions
-[ -s "/home/gabriel/.bun/_bun" ] && source "/home/gabriel/.bun/_bun"
-
 # bun
+[ -s "/home/$HOME/.bun/_bun" ] && source "/home/$HOME/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# golang
+export PATH=$PATH:/usr/local/go/bin
+
+neofetch
