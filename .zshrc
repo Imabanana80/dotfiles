@@ -116,4 +116,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # golang
 export PATH=$PATH:/usr/local/go/bin
 
-neofetch
+fastfetch
