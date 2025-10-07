@@ -33,4 +33,5 @@ git
 ghostty
 tmux (tpm)
 bat (cat replacement)
+eza (ls replacement)
 ```

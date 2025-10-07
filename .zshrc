@@ -101,8 +101,9 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="nvim"
-alias cat="bat"
 alias py="python3"
+alias cat="bat"
+alias ls="eza -l"
 alias cls="clear"
 
 export NVM_DIR="$HOME/.nvm"
