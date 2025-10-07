@@ -32,4 +32,5 @@ nvim
 git
 ghostty
 tmux (tpm)
+bat (cat replacement)
 ```

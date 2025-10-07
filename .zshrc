@@ -101,6 +101,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="nvim"
+alias cat="bat"
 alias py="python3"
 alias cls="clear"
 
