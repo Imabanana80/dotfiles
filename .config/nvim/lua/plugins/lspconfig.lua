@@ -22,6 +22,7 @@ return {
                     "basedpyright",
                     "svelte",
                     "jdtls",
+                    "mdx_analyzer",
                 },
             })
         end,
@@ -61,6 +62,7 @@ return {
             lspconfig.basedpyright.setup(opts)
             lspconfig.svelte.setup(opts)
             lspconfig.jdtls.setup(opts)
+            lspconfig.mdx_analyzer.setup(opts)
 
             require("conform").setup({
                 formatters_by_ft = {
