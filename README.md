@@ -32,6 +32,7 @@ nvim
 git
 ghostty
 tmux (tpm)
-bat (cat replacement)
-eza (ls replacement)
+bat 
+eza 
+btop
 ```
