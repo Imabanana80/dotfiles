@@ -5,20 +5,17 @@ Ubuntu/Debian
 ```
 sudo apt install stow
 ```
-```
-git clone git@knot.potassium.sh:banana.tngl.sh/dotfiles
-```
-```
-cd ~/.dotfiles || stow .
-```
 
 AUR (Arch/EndeavourOS)
 ```
 yay -S stow
 ```
+
+Clone repo
 ```
 git clone git@knot.potassium.sh:banana.tngl.sh/dotfiles
 ```
+Run stow
 ```
 cd ~/.dotfiles || stow .
 ```
