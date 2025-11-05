@@ -6,7 +6,7 @@ Ubuntu/Debian
 sudo apt install stow
 ```
 ```
-git clone git@github.com:Imabanana80/dotfiles.git ~/.dotfiles
+git clone git@knot.potassium.sh:banana.tngl.sh/dotfiles
 ```
 ```
 cd ~/.dotfiles || stow .
@@ -17,7 +17,7 @@ AUR (Arch/EndeavourOS)
 yay -S stow
 ```
 ```
-git clone git@github.com:Imabanana80/dotfiles.git ~/.dotfiles
+git clone git@knot.potassium.sh:banana.tngl.sh/dotfiles
 ```
 ```
 cd ~/.dotfiles || stow .
