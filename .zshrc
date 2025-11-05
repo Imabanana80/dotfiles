@@ -97,13 +97,27 @@ fi
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Config aliases
+alias dotfiles="cd ~/.dotfiles"
+
+# Application aliases
 alias vi="nvim"
 alias py="python3"
 alias cat="bat"
 alias ls="eza -l"
+
+# Git aliases
+alias gl="git log --all --graph --pretty=format:'%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%s%n'"
+alias gs="git status"
+alias gd="git diff"
+alias ga="git add"
+alias gaa="git add ."
+alias gap="git add --patch"
+alias gc="git commit"
+alias gp="git push"
+alias gu="git pull --rebase"
+
+# Misc aliases
 alias cls="clear"
 
 export NVM_DIR="$HOME/.nvm"
