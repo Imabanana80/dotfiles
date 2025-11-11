@@ -1,22 +1,9 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH:/snap/bin/
 export PATH=$HOME/scripts:$PATH
-
-# Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="nanotech"
-
-
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
+export MANPATH="/usr/local/man:$MANPATH"
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
@@ -31,7 +18,7 @@ alias dotfiles="cd ~/.dotfiles"
 alias vi="nvim"
 alias py="python3"
 alias cat="bat"
-alias ls="eza -la --icons"
+alias ls="eza -l --icons"
 alias tree="eza --icons --tree"
 
 # Git aliases
@@ -60,4 +47,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # golang
 export PATH=$PATH:/usr/local/go/bin
 
+eval "$(starship init zsh)"
 fastfetch
