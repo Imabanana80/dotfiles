@@ -24,7 +24,7 @@ cd ~/.dotfiles || stow .
 ### Software
 These dotfiles contain configurations for the following:
 ```
-zsh (oh-my-zsh)
+zsh
 nvim 
 git
 ghostty
@@ -32,4 +32,5 @@ tmux (tpm)
 bat 
 eza 
 btop
+starship.rs
 ```
