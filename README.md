@@ -33,4 +33,5 @@ bat
 eza 
 btop
 starship.rs
+dust
 ```
