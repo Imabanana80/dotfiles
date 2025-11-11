@@ -18,12 +18,14 @@ export EDITOR='nvim'
 export MANPATH="/usr/local/man:$MANPATH"
 export BUN_INSTALL="$HOME/.bun"
 
+
+path ~/scripts
 path ~/bin
 path ~/.local/bin
 path /usr/local/bin
-path ~/scripts
-path $BUN_INSTALL/bin
 path /usr/local/go/bin
+path ~/.cargo/bin
+path $BUN_INSTALL/bin
 
 eval "$(starship init zsh)"
 
