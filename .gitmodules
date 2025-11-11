@@ -1,0 +1,3 @@
+[submodule "/home/banana/.dotfiles/.zsh/zsh-autosuggestions"]
+	path = /home/banana/.dotfiles/.zsh/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions.git
