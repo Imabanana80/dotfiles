@@ -27,12 +27,11 @@ path /usr/local/go/bin
 path ~/.cargo/bin
 path $BUN_INSTALL/bin
 
-eval "$(starship init zsh)"
-
 alias dotfiles="cd ~/.dotfiles"
 alias vi="nvim"
 alias py="python3"
 alias cat="bat"
+alias cd="z"
 alias ls="eza -l --icons"
 alias tree="eza --icons --tree"
 alias gl="git log --all --graph --pretty=format:'%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%s%n'"
@@ -48,5 +47,7 @@ alias cls="clear"
 
 [ -s "/home/$HOME/.bun/_bun" ] && source "/home/$HOME/.bun/_bun"
 
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 fastfetch
