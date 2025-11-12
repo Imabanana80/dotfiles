@@ -34,4 +34,5 @@ eza
 btop
 starship.rs
 dust
+zoxide
 ```
