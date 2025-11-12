@@ -35,4 +35,5 @@ btop
 starship.rs
 dust
 zoxide
+spotify_player
 ```
