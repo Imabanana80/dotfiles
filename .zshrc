@@ -20,6 +20,7 @@ export BUN_INSTALL="$HOME/.bun"
 
 
 path ~/scripts
+path ~/.scripts
 path ~/bin
 path ~/.local/bin
 path /usr/local/bin
