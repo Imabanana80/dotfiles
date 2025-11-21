@@ -217,7 +217,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "avatarImage": "/home/banana/.face",
-        "compactLockScreen": false,
+        "compactLockScreen": true,
         "dimmerOpacity": 0.35000000000000003,
         "enableShadows": false,
         "forceBlackScreenCorners": false,
@@ -376,13 +376,23 @@
     },
     "wallpaper": {
         "defaultWallpaper": "/home/banana/.config/quickshell/noctalia-shell/Assets/Wallpaper/noctalia.png",
-        "directory": "/home/banana/Pictures/Wallpapers",
+        "directory": "/home/banana/.wallpaper",
         "enableMultiMonitorDirectories": false,
         "enabled": false,
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
         "monitors": [
+            {
+                "directory": "/home/banana/.wallpaper",
+                "name": "HDMI-A-1",
+                "wallpaper": "/home/banana/.wallpaper/solace_mountain_night.png"
+            },
+            {
+                "directory": "/home/banana/.wallpaper",
+                "name": "DP-1",
+                "wallpaper": "/home/banana/.wallpaper/solace_mountain_night.png"
+            }
         ],
         "overviewEnabled": false,
         "panelPosition": "follow_bar",
