@@ -48,6 +48,10 @@ return {
         },
     },
     {
+        "sphamba/smear-cursor.nvim",
+        opts = {},
+    },
+    {
         "petertriho/nvim-scrollbar",
         config = function()
             require("scrollbar").setup({})
