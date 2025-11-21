@@ -24,6 +24,9 @@ cd ~/.dotfiles || stow .
 ### Software
 These dotfiles contain configurations for the following:
 ```
+niri
+noctalia-shell
+fuzzel
 zsh
 nvim 
 git
