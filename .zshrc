@@ -25,6 +25,7 @@ path ~/bin
 path ~/.local/bin
 path /usr/local/bin
 path /usr/local/go/bin
+path /snap/bin
 path ~/.cargo/bin
 path $BUN_INSTALL/bin
 
@@ -47,6 +48,9 @@ alias gp="git push"
 alias gu="git pull --rebase"
 alias cls="clear"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 [ -s "/home/$HOME/.bun/_bun" ] && source "/home/$HOME/.bun/_bun"
 
 eval "$(starship init zsh)"
