@@ -23,10 +23,11 @@ path ~/scripts
 path ~/.scripts
 path ~/bin
 path ~/.local/bin
+path ~/.cargo/bin
+path ~/go/bin
+path /snap/bin
 path /usr/local/bin
 path /usr/local/go/bin
-path /snap/bin
-path ~/.cargo/bin
 path $BUN_INSTALL/bin
 
 alias dotfiles="cd ~/.dotfiles"
