@@ -35,14 +35,20 @@ return {
         config = function()
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
             local lspconfig = require("lspconfig")
-            local opts = { capabilities = capabilities }
+            local opts = { 
+                capabilities = capabilities
+            }
             lspconfig.lua_ls.setup(opts)
             lspconfig.rust_analyzer.setup(opts)
-            lspconfig.html.setup(opts)
+            lspconfig.html.setup({
+                capabilities = capabilities,
+                filetypes = { "html", "templ"}
+            })
             lspconfig.astro.setup(opts)
             lspconfig.cssls.setup(opts)
             lspconfig.tailwindcss.setup({
                 capabilities = capabilities,
+                filetypes = { "templ", "astro", "javascript", "typescript", "react" },
                 settings = {
                     tailwindCSS = {
                         experimental = {
