@@ -34,7 +34,7 @@ input {
     mouse {
         // off
         // natural-scroll
-        accel-speed -0.5
+        accel-speed -0.65
         accel-profile "flat"
         // scroll-method "no-scroll"
     }
@@ -120,7 +120,6 @@ screenshot-path null
 animations {
     // off
 }
-
 
 // https://yalter.github.io/niri/Configuration:-Window-Rules
 window-rule {
