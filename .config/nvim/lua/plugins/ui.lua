@@ -1,13 +1,5 @@
 return {
     {
-        "folke/noice.nvim",
-        event = "VeryLazy",
-        opts = {},
-        dependencies = {
-            "MunifTanjim/nui.nvim",
-        },
-    },
-    {
         "rachartier/tiny-inline-diagnostic.nvim",
         event = "VeryLazy", -- Or `LspAttach`
         priority = 1000, -- needs to be loaded in first
@@ -46,10 +38,6 @@ return {
                 })
             end,
         },
-    },
-    {
-        "sphamba/smear-cursor.nvim",
-        opts = {},
     },
     {
         "petertriho/nvim-scrollbar",
