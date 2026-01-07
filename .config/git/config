@@ -6,6 +6,7 @@
     compression = 8
     whitespace = error
     preloadindex = true
+	autocrlf = input
 
 [inti]
     defaultBranch = main
@@ -37,3 +38,5 @@
     sort = -taggerdate
 [alias]
 	mirror = !git-mirror.sh
+[init]
+	defaultBranch = main
