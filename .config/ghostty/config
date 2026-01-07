@@ -1,3 +1,2 @@
 theme = catppuccin-mocha.conf
 shell-integration = zsh
-background-opacity = 0.9
