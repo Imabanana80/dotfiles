@@ -9,4 +9,4 @@ application/x-keepass2=keepassxc.desktop;
 image/jpeg=okularApplication_kimgio.desktop
 image/png=okularApplication_kimgio.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
-inode/directory=org.kde.dolphin.desktop
+inode/directory=yazi.desktop
