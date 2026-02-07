@@ -7,8 +7,6 @@ zstyle :compinstall filename "$HOME/.zshrc"
 autoload -Uz compinit
 compinit
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 path () {
     export PATH="$PATH:$@"
 }
