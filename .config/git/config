@@ -37,6 +37,7 @@
 [tag]
     sort = -taggerdate
 [alias]
-	mirror = !git-mirror.sh
+    tree = log --oneline --graph --all
+    mirror = !git-mirror.sh
 [init]
 	defaultBranch = main
