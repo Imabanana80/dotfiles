@@ -39,5 +39,4 @@ starship.rs
 dust
 zoxide
 hledger
-spotify_player
 ```
