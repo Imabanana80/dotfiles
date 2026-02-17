@@ -15,6 +15,7 @@ export ZSH_AUTOSUGGEST_STRATEGY=(completion)
 export EDITOR='nvim'
 export MANPATH="/usr/local/man:$MANPATH"
 export BUN_INSTALL="$HOME/.bun"
+export LEDGER_FILE="$HOME/finance/index.journal"
 
 
 path ~/scripts
@@ -46,6 +47,7 @@ alias gc="git commit"
 alias gp="git push"
 alias gu="git pull --rebase"
 alias cls="clear"
+alias h="hledger"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
