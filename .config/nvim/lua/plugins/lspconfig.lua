@@ -23,6 +23,7 @@ return {
                     "svelte",
                     "jdtls",
                     "mdx_analyzer",
+                    "tinymist"
                 },
             })
         end,
@@ -69,6 +70,15 @@ return {
             lspconfig.svelte.setup(opts)
             lspconfig.jdtls.setup(opts)
             lspconfig.mdx_analyzer.setup(opts)
+            lspconfig.tinymist.setup({
+                capabilities = capabilities,
+                cmd = { "tinymist" },
+                filetypes = { "typst" },
+                settings = {
+                    formatterIndentSize = 4,
+                    formatterPrintWidth = 80
+                }
+            })
 
             require("conform").setup({
                 formatters_by_ft = {
