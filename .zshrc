@@ -32,6 +32,7 @@ path $BUN_INSTALL/bin
 alias dotfiles="cd ~/.dotfiles"
 alias vi="nvim"
 alias py="python3"
+alias py3="python3.14"
 alias spt="spotify_player"
 alias cat="bat"
 alias cd="z"
