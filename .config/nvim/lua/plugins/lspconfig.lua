@@ -91,6 +91,11 @@ return {
                     json = { "jq" },
                     go = { "gofmtpt" },
                 },
+                formatters = {
+                    jq = {
+                        args = { "--indent", "4" },
+                    },
+                },
                 format_on_save = {
                     timeout_ms = 3000,
                 },
