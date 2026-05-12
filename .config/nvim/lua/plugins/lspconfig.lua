@@ -20,10 +20,11 @@ return {
                     "gopls",
                     "jsonls",
                     "basedpyright",
+                    "omnisharp",
                     "svelte",
                     "jdtls",
                     "mdx_analyzer",
-                    "tinymist"
+                    "tinymist",
                 },
             })
         end,
@@ -36,14 +37,14 @@ return {
         config = function()
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
             local lspconfig = require("lspconfig")
-            local opts = { 
-                capabilities = capabilities
+            local opts = {
+                capabilities = capabilities,
             }
             lspconfig.lua_ls.setup(opts)
             lspconfig.rust_analyzer.setup(opts)
             lspconfig.html.setup({
                 capabilities = capabilities,
-                filetypes = { "html", "templ"}
+                filetypes = { "html", "templ" },
             })
             lspconfig.astro.setup(opts)
             lspconfig.cssls.setup(opts)
@@ -67,6 +68,15 @@ return {
             lspconfig.gopls.setup(opts)
             lspconfig.jsonls.setup(opts)
             lspconfig.basedpyright.setup(opts)
+            lspconfig.omnisharp.setup({
+                capabilities = capabilities,
+                cmd = { vim.fn.expand("~/.local/share/nvim/mason/bin/OmniSharp") },
+                root_dir = lspconfig.util.root_pattern("*.sln", "*.csproj"),
+                settings = {
+                    FormattingOptions = { EnableEditorConfigSupport = true },
+                    RoslynExtensionsOptions = { EnableAnalyzersSupport = true },
+                },
+            })
             lspconfig.svelte.setup(opts)
             lspconfig.jdtls.setup(opts)
             lspconfig.mdx_analyzer.setup(opts)
@@ -76,8 +86,8 @@ return {
                 filetypes = { "typst" },
                 settings = {
                     formatterIndentSize = 4,
-                    formatterPrintWidth = 80
-                }
+                    formatterPrintWidth = 80,
+                },
             })
 
             require("conform").setup({
