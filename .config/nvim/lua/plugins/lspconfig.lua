@@ -26,6 +26,7 @@ return {
                     "mdx_analyzer",
                     "tinymist",
                 },
+                automatic_enable = false;
             })
         end,
     },
@@ -63,7 +64,17 @@ return {
                     },
                 },
             })
-            lspconfig.ts_ls.setup(opts)
+            lspconfig.ts_ls.setup({
+                capabilities = capabilities,
+                handlers = {
+                    ["textDocument/publishDiagnostics"] = function(_, result, ctx, config)
+                        result.diagnostics = vim.tbl_filter(function(d)
+                            return d.code ~= 80001
+                        end, result.diagnostics)
+                        vim.lsp.diagnostic.on_publish_diagnostics(_, result, ctx, config)
+                    end,
+                },
+            })
             lspconfig.dockerls.setup(opts)
             lspconfig.gopls.setup(opts)
             lspconfig.jsonls.setup(opts)
