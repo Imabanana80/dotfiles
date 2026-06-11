@@ -16,6 +16,7 @@ export EDITOR='nvim'
 export MANPATH="/usr/local/man:$MANPATH"
 export BUN_INSTALL="$HOME/.bun"
 export LEDGER_FILE="$HOME/finance/index.journal"
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 
 
 path ~/scripts
