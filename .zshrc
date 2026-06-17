@@ -17,6 +17,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 export BUN_INSTALL="$HOME/.bun"
 export LEDGER_FILE="$HOME/finance/index.journal"
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
+export TODO_DIR="$HOME/.todo"
 
 
 path ~/scripts
@@ -50,6 +51,7 @@ alias gp="git push"
 alias gu="git pull --rebase"
 alias cls="clear"
 alias h="hledger"
+alias t="tuxedo"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  

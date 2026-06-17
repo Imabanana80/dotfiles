@@ -39,4 +39,6 @@ starship.rs
 dust
 zoxide
 hledger
+passwordstore
+tuxedo
 ```
