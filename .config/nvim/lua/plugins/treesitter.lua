@@ -30,11 +30,4 @@ return {
             })
         end,
     },
-    {
-        "davidmh/mdx.nvim",
-        config = true,
-    },
-    {
-        "joerdav/templ.vim"
-    }
 }
