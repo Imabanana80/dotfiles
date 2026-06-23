@@ -1,11 +1,12 @@
 -- system
 vim.g.have_nerd_font = true
 vim.opt.clipboard = "unnamedplus"
-vim.opt.history = 100
+vim.opt.history = 255
 vim.opt.undofile = true
 vim.opt.mouse = ""
 
 -- ui
+vim.diagnostic.config({virtual_text = true}) 
 vim.opt.title = true
 vim.opt.showmode = false
 vim.opt.cursorline = true
