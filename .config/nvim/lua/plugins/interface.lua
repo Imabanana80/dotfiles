@@ -47,7 +47,7 @@ return {
             starter.setup({
             header = header,
             items = {
-                starter.sections.recent_files(8, false),
+                starter.sections.recent_files(8, true),
             },
             footer = footer,
             content_hooks = {
