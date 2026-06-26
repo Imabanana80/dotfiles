@@ -6,7 +6,7 @@ vim.opt.undofile = true
 vim.opt.mouse = ""
 
 -- ui
-vim.diagnostic.config({virtual_text = true}) 
+vim.diagnostic.config({virtual_text = true})
 vim.opt.title = true
 vim.opt.showmode = false
 vim.opt.cursorline = true

@@ -11,8 +11,13 @@ return {
         opts = {}
     },
     {
-        "brenoprata10/nvim-highlight-colors",
-        opts = {}
+        "uga-rosa/ccc.nvim",
+        opts = {
+            highlighter = {
+                auto_enable = true,
+                lsp = true,
+	        },
+        }
     },
     {
         'nvim-mini/mini.pairs',
